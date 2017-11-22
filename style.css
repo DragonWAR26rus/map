@@ -48,6 +48,7 @@ a:focus,a:hover {
 .masthead:before {
     content: "";
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,.4);
@@ -57,7 +58,6 @@ a:focus,a:hover {
     display: table;
     width: 100%;
     height: 100%;
-    padding: 200px 0;
     text-align: center;
     color: #fff;
     background: url(./img/park_bg.jpg) no-repeat bottom center scroll;
@@ -124,6 +124,15 @@ a:focus,a:hover {
     transition: all .3s ease-in-out;
     text-transform: uppercase;
     border-radius: 0
+}
+
+@media (max-width: 768px) {
+    .btn-circle {
+        font-size:19px;
+        height: 42px;
+        line-height: 1.6;
+        margin: 0 0 35px;
+    }
 }
 
 ::-moz-selection {
